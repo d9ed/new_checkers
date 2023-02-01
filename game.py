@@ -41,15 +41,15 @@ class Game:
             #         break
             #     print()
             cur_cell = ""
-            next_cell = Piece(cur_player.color)
+            # next_cell = Piece(cur_player.color)
 
-            if cur_player == self.p1:
-                next_row = self.board.state[row_index + 1]
-            else:
-                next_row = self.board.state[row_index - 1]
-            next_row_index = Player.validate_input(next_row, "please choose where you want to move your piece, from 0-7.\n",
-                                            "next_row", cur_player)
-            next_row[next_row_index] = Piece(cur_player.color)
-            row[piece_index] = " "
-            cur_player = Game.change_player(cur_player, self.p1, self.p2)
-            break
+            # if cur_player == self.p1:
+            #     next_row = self.board.state[row_index + 1]
+            # else:
+            #     next_row = self.board.state[row_index - 1]
+            # next_row_index = Player.validate_input(next_row, "please choose where you want to move your piece, from 0-7.\n",
+            #                                 "next_row", cur_player)
+            # next_row[next_row_index] = Piece(cur_player.color)
+            # row[piece_index] = " "
+            # cur_player = Game.change_player(cur_player, self.p1, self.p2)
+            # break
