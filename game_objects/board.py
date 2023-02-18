@@ -15,8 +15,20 @@ class Board:
             [' ', Piece('b'), ' ', Piece('b'), ' ', Piece('b'), ' ', Piece('b')]
         ]
 
-    def print_board(self):
+    # def move(self, chosen_cell, move_to_cell):
+    #     chosen_cell = " "
+    #     move_to_cell
+    #     return
+
+    def print_board(self, num=33):
+        print("—"*num)
         for row in self.state:
+            show_row = ""
             for col in row:
-                print(col, end=" ")
-            print()
+                show_col = f"| {col} "
+                show_row += show_col
+            print(show_row+"|")
+        print("—"*num)
+
+# class MovementLogic():
+#     def __init__(self):
